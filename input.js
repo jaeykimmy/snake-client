@@ -26,5 +26,8 @@ const handleUserInput = function(key) {
   if (key.toUpperCase() === 'D') {
     connection.write('Move: right');
   }
+  if (key.toUpperCase() === 'Q') {
+    connection.write('Say: hey there');
+  }
 };
 module.exports = {setupInput};
